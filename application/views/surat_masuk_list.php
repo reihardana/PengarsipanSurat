@@ -5,7 +5,7 @@
             <div class='col-xs-12'>
               <div class='box'>
                 <div class='box-header'>
-                  <h3 class='box-title'>SURAT_MASUK LIST <?php echo anchor('surat_masuk/create/','Create',array('class'=>'btn btn-danger btn-sm'));?>
+                  <h3 class='box-title'>LIST SURAT MASUK <br><br> <?php echo anchor('surat_masuk/create/','Create',array('class'=>'btn btn-danger btn-sm'));?>
 		<?php echo anchor(site_url('surat_masuk/excel'), ' <i class="fa fa-file-excel-o"></i> Excel', 'class="btn btn-primary btn-sm"'); ?>
 		<?php echo anchor(site_url('surat_masuk/word'), '<i class="fa fa-file-word-o"></i> Word', 'class="btn btn-primary btn-sm"'); ?>
 		<?php echo anchor(site_url('surat_masuk/pdf'), '<i class="fa fa-file-pdf-o"></i> PDF', 'class="btn btn-primary btn-sm"'); ?></h3>

@@ -2,16 +2,16 @@
         <section class='content'>
           <div class='row'>
             <div class='col-xs-12'
-                  <h3 class='box-title'>SURAT_MASUK</h3>
+                  <h3 class='box-title'>SURAT MASUK</h3>
                       <div class='box box-primary'>
         <form action="<?php echo $action; ?>" method="post"><table class='table table-bordered'>
 	    <tr><td>Nomor Surat <?php echo form_error('nomor_surat') ?></td>
-            <td><input type="text" class="form-control" name="nomor_surat" id="nomor_surat" placeholder="Nomor Surat" value="<?php echo $nomor_surat; ?>" />
+            <td><input type="text" class="form-control" name="nomor_surat" id="nomor_surat" placeholder="420/.../422.101/<?php echo date('Y');?>" value="<?php echo $nomor_surat; ?>" />
         </td>
 	    <tr><td>Perihal <?php echo form_error('perihal') ?></td>
             <td><select type="text" class="form-control" name="perihal" id="perihal" placeholder="Perihal" value="<?php echo $perihal; ?>">
-            <option value="">Option 1</option>
-            <option value="">Option 2</option> 
+            <option value="Kegiatan 1">Perihal 1</option>
+            <option value="Kegiatan 2">Perihal 2</option> 
           </select>
         </td>
 	    <tr><td>Tanggal <?php echo form_error('tanggal') ?></td>
