@@ -1,10 +1,7 @@
 <!-- Main content -->
         <section class='content'>
           <div class='row'>
-            <div class='col-xs-12'>
-              <div class='box'>
-                <div class='box-header'>
-                
+            <div class='col-xs-12'
                   <h3 class='box-title'>SURAT_MASUK</h3>
                       <div class='box box-primary'>
         <form action="<?php echo $action; ?>" method="post"><table class='table table-bordered'>
@@ -12,10 +9,13 @@
             <td><input type="text" class="form-control" name="nomor_surat" id="nomor_surat" placeholder="Nomor Surat" value="<?php echo $nomor_surat; ?>" />
         </td>
 	    <tr><td>Perihal <?php echo form_error('perihal') ?></td>
-            <td><input type="text" class="form-control" name="perihal" id="perihal" placeholder="Perihal" value="<?php echo $perihal; ?>" />
+            <td><select type="text" class="form-control" name="perihal" id="perihal" placeholder="Perihal" value="<?php echo $perihal; ?>">
+            <option value="">Option 1</option>
+            <option value="">Option 2</option> 
+          </select>
         </td>
 	    <tr><td>Tanggal <?php echo form_error('tanggal') ?></td>
-            <td><input type="text" class="form-control" name="tanggal" id="tanggal" placeholder="Tanggal" value="<?php echo $tanggal; ?>" />
+            <td><input type="date" class="form-control" name="tanggal" id="tanggal" placeholder="Tanggal" value="<?php echo $tanggal; ?>" />
         </td>
 	    <tr><td>Pengirim <?php echo form_error('pengirim') ?></td>
             <td><input type="text" class="form-control" name="pengirim" id="pengirim" placeholder="Pengirim" value="<?php echo $pengirim; ?>" />

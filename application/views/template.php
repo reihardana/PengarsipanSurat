@@ -56,24 +56,21 @@
 
                             <!-- User Account: style can be found in dropdown.less -->
                             <li class="dropdown user user-menu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="<?php echo base_url()?>assets/img/logouser.png" class="user-image" alt="User Image">
-                                    <span class="hidden-xs">Welcome</span>
-                                </a>
+                                <div style="margin-top: 10px; margin-right: 5px">
+                                    <?php echo anchor('auth/logout','Logout',array('class'=>'btn btn-danger fa fa-sign-out'));?>
+                                    
+                                </div>
                                 <ul class="dropdown-menu">
                                     <!-- User image -->
                                     <li class="user-header">
                                         <img src="<?php echo base_url()?>assets/img/logouser.png" class="img-circle" alt="User Image">
-                                        <p>
-                                            Alexander Pierce - Web Developer
-                                            <small>Member since Nov. 2012</small>
-                                        </p>
+                                        
                                     </li>
                                     <!-- Menu Footer-->
                                     <li class="user-footer">
                                         <div style="text-align: center">
                                             <?php
-                                            echo anchor('auth/logout','Sing out',array('class'=>'btn btn-danger'));
+                                            echo anchor('auth/logout','Sign out',array('class'=>'btn btn-danger'));
                                             ?>
                                             
                                         </div>
@@ -167,7 +164,7 @@
                 <div class="pull-right hidden-xs">
                     <b>Version</b> 2.3.0
                 </div>
-                <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
+                <strong>Copyright &copy; 2020.</strong> All rights reserved.
             </footer>
 
             <!-- Add the sidebar's background. This div must be placed
@@ -206,3 +203,4 @@
         </script>
     </body>
 </html>
+ 
